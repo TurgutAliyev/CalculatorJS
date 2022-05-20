@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+            width: 400px;
+            height: 530px;
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%,-40%);
+            background-color: rgb(243, 204, 194);
+            border-radius: 10px;
+        }
+        input{
+            width: 396px;
+            height: 110px;
+            background-color: #c5d3f0;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            color: #000;
+            text-align: end;
+            font-size: x-large;
+            font-weight: 600;
+        }
+        .buttons{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+        .button{
+            width: 90px;
+            height: 75px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 3px;
+            font-size: large;
+            font-weight: 500;
+        }
+        .button:hover{
+            background-color: rgb(111, 124, 240);
+        }
+    </style>
+</head>
+<body>
+    <div class="color">
+        <div class="container">
+           <form action="">
+               <input type="text" readonly = "readonly">
+           </form>
+           <div class="buttons" id="allButton">
+               <button class="button" onclick="Sifirla()">C</button>
+               <button class="button" onclick="Click('/')">/</button>
+               <button class="button" onclick="Click('*')">*</button>
+               <button class="button" onclick="Sil()">&larr;</button>
+
+               <button class="button" onclick="Click(7)">7</button>
+               <button class="button" onclick="Click(8)">8</button>
+               <button class="button" onclick="Click(9)">9</button>
+               <button class="button" onclick="Click('-')">-</button>
+
+               <button class="button" onclick="Click(6)">6</button>
+               <button class="button" onclick="Click(5)">5</button>
+               <button class="button" onclick="Click(4)">4</button>
+               <button class="button" onclick="Click('+')">+</button>
+
+               <button class="button" onclick="Click(3)">3</button>
+               <button class="button" onclick="Click(2)">2</button>
+               <button class="button" onclick="Click(1)">1</button>
+               <button class="button" onclick="Click('.')">.</button>
+
+               <button class="button" onclick="Click('(')">(</button>
+               <button class="button" onclick="Click(0)">0</button>
+               <button class="button" onclick="Click(')')">)</button>
+               <button class="button" onclick="Hesabla()">=</button>
+           </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
